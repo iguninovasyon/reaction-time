@@ -4,8 +4,65 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: 500;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    margin-top: 75px;
+    
 }
+.game {
+    margin: 0px;
+    background-color: #1E9ED6;
+    color: azure;
+    height: 500px; 
+    width: 100%;
+      
+}
+.game .title{
+    font-size: 75px;  
+    text-align: center;
+}
+.game .description{
+    text-align: center;
+}
+.icon svg{
+    animation: 1s ease-in-out 0s infinite alternate none running pulse-faint;
+}
+@keyframes pulse-faint{
+    0% {
+    opacity: 0.6;
+}
+    100% {
+    opacity: 1;
+}}
+.texts {
+    animation-name: slideFadeIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+@keyframes slideFadeIn{
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@media (max-width: 450px) {
+    .game .title{
+        font-size: 50px;  
+    }
+  }
+  
+
+
+
