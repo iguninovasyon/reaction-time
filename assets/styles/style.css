@@ -10,32 +10,39 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin-top: 75px;
-    
+
 }
+
 .game {
     background-color: #1E9ED6;
     color: azure;
-    height: 500px; 
-    
-      
+    height: 500px;
+    cursor: pointer;
 }
-.game .title{
-    font-size: 75px;  
+
+.game .title {
+    font-size: 75px;
     text-align: center;
 }
-.game .description{
+
+.game .description {
     text-align: center;
 }
-.icon svg{
+
+.icon svg {
     animation: 1s ease-in-out 0s infinite alternate none running pulse-faint;
 }
-@keyframes pulse-faint{
+
+@keyframes pulse-faint {
     0% {
-    opacity: 0.6;
-}
+        opacity: 0.6;
+    }
+
     100% {
-    opacity: 1;
-}}
+        opacity: 1;
+    }
+}
+
 .texts {
     animation-name: slideFadeIn;
     animation-duration: 0.5s;
@@ -46,22 +53,21 @@ body {
     align-items: center;
     height: 100%;
 }
-@keyframes slideFadeIn{
+
+@keyframes slideFadeIn {
     0% {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0px);
     }
 }
+
 @media (max-width: 450px) {
-    .game .title{
-        font-size: 50px;  
+    .game .title {
+        font-size: 50px;
     }
-  }
-  
-
-
-
+}
