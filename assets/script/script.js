@@ -27,7 +27,13 @@ function displayReactionTime() { // Ege Sezer
     // oyun alanı arkaplan rengini #2b87d1 (mavi) renk kodu ile değiştir.
     // ekrana reactionTime değerini yazdır
     greenDisplayed = false;
+    game.style.backgroundColor = "#2b87d1";
+    title.innerHTML=reactionTime +  " ms ";
+    description.innerHTML="";
+    icon.innerHTML="";
+    
 }
+
 
 game.addEventListener("click", function () {
     if (greenDisplayed) {
