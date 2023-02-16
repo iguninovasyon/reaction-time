@@ -13,11 +13,10 @@ body {
     
 }
 .game {
-    margin: 0px;
     background-color: #1E9ED6;
     color: azure;
     height: 500px; 
-    width: 100%;
+    
       
 }
 .game .title{
